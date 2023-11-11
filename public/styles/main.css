@@ -1,0 +1,62 @@
+:root{
+    --card-height:65vh;
+    --card-width: calc(var(--card-height) / 1.1);
+}
+
+
+h1{
+    color: #93B1A6;
+}
+
+body{
+    min-height: 100vh;
+    background: #040D12;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.card{
+    background: url("../images/sphinx.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: var(--card-width);
+    height: var(--card-height);
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2em;
+    color: transparent;
+}
+
+.card:hover {
+    color: goldenrod;
+    transition: color 1s;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/sphinx.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.answer{
+    color: transparent;
+    font-size: 1.5em;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+}
+
+.answer:hover{
+    color: bisque;
+    
+}
